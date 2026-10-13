@@ -1,0 +1,49 @@
+CONCLUSIONES DEL PROYECTO DE VENTAS
+Conceptos Fundamentales de Programación - Politécnico
+Integrantes: Santiago González Agudelo, Danys Gutiérrez Franco, Iveth Gutiérrez Franco, Daniela Natalia Ríos Manco
+
+========================================
+1. Lo aprendido durante el desarrollo del proyecto
+========================================
+
+En este proyecto pasamos de escribir programas pequeños a trabajar con un sistema completo que lee datos, los procesa y entrega reportes. Lo primero que aprendimos fue a leer y escribir archivos de texto plano. Al principio parecía simple, pero pronto vimos que los datos casi nunca llegan perfectos: hay líneas vacías, números escritos como texto, cantidades negativas o productos que no existen. Por eso el programa tiene que seguir funcionando aunque una parte de los datos esté mal, mostrar un aviso y continuar.
+
+Usamos HashMap para relacionar los productos y los vendedores con sus ventas por medio del ID o del número de documento, y ArrayList para guardar los resultados. Con Comparator aprendimos a ordenar los reportes de mayor a menor, tanto por dinero recaudado como por unidades vendidas.
+
+También entendimos la importancia de separar el código en métodos con una sola responsabilidad. Así, el modo automático, el menú de consola y la ventana gráfica usan el mismo método procesarVentas() sin repetir la lógica. Cuando tuvimos que mostrar los mismos resultados en la consola y en la ventana, la solución fue que los métodos recibieran el destino de la salida, en lugar de escribir siempre en System.out.
+
+Con la serialización (reportes.ser) vimos cómo guardar objetos completos en un archivo binario y volver a leerlos. Esto nos dejó ver la diferencia entre guardar datos como texto, que cualquiera puede abrir, y guardarlos como objetos, que solo el programa puede interpretar.
+
+Por último, documentar con JavaDoc nos obligó a pensar qué recibe y qué devuelve cada método antes de escribir su código, y eso ayudó a encontrar errores que de otra forma habríamos pasado por alto.
+
+========================================
+2. Posibles aplicaciones en la vida profesional
+========================================
+
+Aunque el proyecto fue hecho con fines educativos, sus problemas son muy parecidos a los que aparecen en empresas reales:
+
+- Una tienda o distribuidora necesita saber cuánto vende cada vendedor y qué productos salen más. Este programa hace exactamente eso, con datos de entrada en archivos de texto.
+
+- Leer archivos planos y validarlos es muy común al integrar sistemas, migrar datos entre programas o recibir reportes de otras áreas. Saber qué hacer con una línea mal formada evita que todo un proceso se detenga.
+
+- Generar los reportes en CSV permite abrirlos en Excel, Google Sheets o herramientas como Power BI sin necesidad de programar más.
+
+- Separar la lógica del negocio (procesarVentas) de la forma de mostrar los datos (consola, menú o ventana) es la idea base de arquitecturas como MVC, que se usan en casi cualquier aplicación profesional.
+
+- La serialización es una forma sencilla de guardar el estado de un programa, por ejemplo para retomar un proceso más tarde o para pasar objetos entre sistemas.
+
+========================================
+3. Dificultades presentadas
+========================================
+
+La principal dificultad fue trabajar en equipo. Varias partes del programa dependían de métodos que otra persona todavía no había terminado, así que tuvimos que ponernos de acuerdo en los nombres, los formatos de los archivos y lo que cada método recibe y devuelve. Aprendimos que definir esas interfaces antes de programar ahorra mucho tiempo.
+
+Otra dificultad fue manejar los errores. Hay que identificar todos los casos posibles (archivo vacío, producto inexistente, cantidad negativa, línea mal formada, vendedor no registrado) y decidir qué hace el programa en cada uno sin cerrarse. Al final cada caso tiene su propio aviso y las pruebas están en la carpeta pruebas/.
+
+La compatibilidad con Java 8 también fue un reto. Algunas formas nuevas de escribir código, como var, List.of o Files.writeString, no existen en esa versión, así que tuvimos que buscar las alternativas clásicas y revisar cada compilación con la opción --release 8.
+
+Por último, pasar la lógica de la consola a una ventana gráfica nos costó porque los métodos imprimían directamente en pantalla. Tuvimos que cambiarlos para que devolvieran su salida a un destino, y así la misma lógica sirve para ambas interfaces.
+
+========================================
+FIN DEL DOCUMENTO
+========================================
