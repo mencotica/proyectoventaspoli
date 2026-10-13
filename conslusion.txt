@@ -1,0 +1,69 @@
+CONCLUSIÓN - PROYECTO DE VENTAS
+Conceptos Fundamentales de Programación
+
+Integrantes:
+- Santiago González Agudelo
+- Danys Gutiérrez Franco
+- Iveth Gutiérrez Franco
+- Daniela Natalia Ríos Manco
+
+
+1. Lo aprendido durante el desarrollo del proyecto
+
+Al principio pensábamos que leer y escribir archivos iba a ser lo más fácil, y
+resultó ser donde más cosas podían fallar. Aprendimos a usar BufferedReader y
+BufferedWriter con try-with-resources para no dejar archivos abiertos, y a
+separar cada línea con split para sacar los datos.
+
+También entendimos para qué sirven los mapas. Con un HashMap pudimos buscar el
+precio de un producto por su ID sin recorrer toda la lista cada vez, y sumar
+las ventas por número de documento, que fue lo que nos permitió aceptar varios
+archivos del mismo vendedor sin cambiar nada más.
+
+Con la serialización vimos que se puede guardar un objeto completo en un
+archivo y volverlo a leer después, y que hay que estar listos para cuando ese
+archivo no existe o llega dañado.
+
+Hacer la ventana con Swing nos obligó a ordenar el código. Al principio los
+métodos imprimían directo en consola, y para reutilizarlos en la ventana
+tuvimos que pasarles a dónde escribir (un PrintStream). Así la consola y la
+ventana usan los mismos métodos.
+
+Aportes individuales (cada integrante completa el suyo):
+- Santiago González Agudelo: [COMPLETAR]
+- Danys Gutiérrez Franco: [COMPLETAR]
+- Iveth Gutiérrez Franco: [COMPLETAR]
+- Daniela Natalia Ríos Manco: [COMPLETAR]
+
+
+2. Posibles aplicaciones en la vida profesional
+
+Muchas empresas todavía mueven información en archivos planos o CSV: reportes
+que exporta un sistema, listados de inventario, extractos de ventas. Lo que
+hicimos aquí, leer esos archivos, cruzarlos y sacar un resumen, es una tarea
+común en cualquier área donde se manejen datos.
+
+Validar los datos antes de usarlos también aplica en cualquier trabajo. En la
+vida real los archivos llegan con errores, y un programa que se cae por una
+línea mala no sirve. Por eso hicimos que el programa avise y siga.
+
+Además, trabajar en grupo con un repositorio en GitHub, con ramas para cada
+entrega, se parece a cómo se trabaja en un equipo de desarrollo.
+
+
+3. Dificultades presentadas
+
+- Los archivos de ventas que se generan al azar no siempre coinciden con los
+  vendedores actuales si se vuelve a generar vendedores.txt. Tuvimos que
+  entender por qué salían avisos de "vendedor no registrado".
+- Para las pruebas con datos erróneos tuvimos que pensar qué podía venir mal:
+  productos que no existen, cantidades negativas, texto donde iba un número y
+  archivos vacíos.
+- Mantener el proyecto compatible con Java 8 nos limitó algunas cosas que
+  veíamos en ejemplos de internet escritos para versiones más nuevas.
+
+Dificultades individuales (cada integrante completa la suya):
+- Santiago González Agudelo: [COMPLETAR]
+- Danys Gutiérrez Franco: [COMPLETAR]
+- Iveth Gutiérrez Franco: [COMPLETAR]
+- Daniela Natalia Ríos Manco: [COMPLETAR]

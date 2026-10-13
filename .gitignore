@@ -6,9 +6,7 @@ out/
 
 ### Eclipse ###
 .apt_generated
-.classpath
 .factorypath
-.project
 .settings
 .springBeans
 .sts4-cache
@@ -28,3 +26,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Proyecto ###
+.idea/
+.run/
+pruebas/reporte_*.csv
+pruebas/reportes.ser

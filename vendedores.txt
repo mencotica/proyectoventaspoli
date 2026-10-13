@@ -1,6 +1,6 @@
-CC;46350789;Sofia;Sanchez
-CC;92751958;Isabella;Martinez
-CC;83352514;Camila;Vargas
-CC;11906987;Carlos;Moreno
-CC;83585776;Daniela;Navarro
-CC;92442676;Laura;Morales
+CC;80966550;Camila;Martinez
+CC;78159403;Mateo;Sanchez
+CC;43354541;Valentina;Herrera
+CC;84328299;Laura;Lopez
+CC;91680248;Juan;Gonzalez
+CC;33673793;Isabella;Gonzalez

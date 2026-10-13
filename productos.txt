@@ -1,12 +1,12 @@
-1;Teclado mecanico;2915232
-2;Mouse inalambrico;3793331
-3;Monitor 24 pulgadas;2951853
-4;Audifonos bluetooth;1897560
-5;Impresora multifuncional;1206405
-6;Silla ergonomica;2160564
-7;Escritorio elevable;2350153
-8;Memoria USB 64GB;2985394
-9;Webcam Full HD;1164945
-10;Cargador portatil;2676460
-11;Disco Solido SSD 1TB;2995328
-12;Base refrigerante;3190422
+1;Teclado mecanico;2529301
+2;Mouse inalambrico;583393
+3;Monitor 24 pulgadas;3014177
+4;Audifonos bluetooth;3332857
+5;Impresora multifuncional;2451536
+6;Silla ergonomica;2835044
+7;Escritorio elevable;2763798
+8;Memoria USB 64GB;2666178
+9;Webcam Full HD;1781657
+10;Cargador portatil;441451
+11;Disco Solido SSD 1TB;3558714
+12;Base refrigerante;1315170
